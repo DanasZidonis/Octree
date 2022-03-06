@@ -2,7 +2,7 @@ import open3d as o3d
 import laspy
 import os
 
-inFile = laspy.read(os.getcwd() + r'\venv\LasFile\2743_1234.las')
+inFile = laspy.read(os.getcwd() + r'\2743_1234.las')
 pcd = o3d.geometry.PointCloud()
 pcd.points = o3d.utility.Vector3dVector(inFile.xyz)
 pcd.paint_uniform_color([124, 252, 0])
